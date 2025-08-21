@@ -70,6 +70,7 @@ Start Apache and MySQL in XAMPP.
 2. Create a new database named:
 3. start_ai_chatbot
 4. Go to Import → Select db/start_ai_chatbot.sql → Click Go.
+
 ✅ This will create all tables (users, ai_chat_history, ai_faqs_Q, ai_faqs_A) with sample data if included.
 
 ### 4. Configure Database Connection
