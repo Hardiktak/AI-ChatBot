@@ -50,11 +50,15 @@ cd ai_chat_assistant
 ### 2. Create Virtual Environment & Install Dependencies
 ```
 python -m venv venv
+```
 # Activate virtual environment
+```
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # Mac/Linux
+```
 
 # Install dependencies
+```
 pip install -r requirements.txt
 ```
 
