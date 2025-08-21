@@ -34,7 +34,6 @@ ai_chat_project/
 │ └── start_ai_chatbot.sql # MySQL DB export
 │── requirements.txt
 │── README.md
-│── .gitignore
 ```
 
 ---
