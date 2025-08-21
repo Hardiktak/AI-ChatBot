@@ -24,6 +24,8 @@ This project is a **Flask-based AI Chat Assistant** with:
 ---
 
 ## 📂 Project Structure
+
+```
 ai_chat_project/
 │── app.py # Flask backend
 │── templates/
@@ -33,7 +35,7 @@ ai_chat_project/
 │── requirements.txt
 │── README.md
 │── .gitignore
-
+```
 
 ---
 
