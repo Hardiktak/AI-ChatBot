@@ -57,3 +57,50 @@ source venv/bin/activate   # Mac/Linux
 # Install dependencies
 pip install -r requirements.txt
 ```
+
+### 3. Setup MySQL Database (XAMPP)
+
+Start Apache and MySQL in XAMPP.
+
+1. Open http://localhost/phpmyadmin.
+2. Create a new database named:
+3. start_ai_chatbot
+4. Go to Import → Select db/start_ai_chatbot.sql → Click Go.
+✅ This will create all tables (users, ai_chat_history, ai_faqs_Q, ai_faqs_A) with sample data if included.
+
+### 4. Configure Database Connection
+
+By default, app.py uses:
+```
+conn = mysql.connector.connect(
+    host="localhost",
+    user="root",      # default XAMPP user
+    password="",      # leave empty unless you set a password
+    database="start_ai_chatbot"
+)
+```
+👉 If you set a MySQL password, update password="yourpassword" in app.py.
+
+### 5. Run Flask Application
+```
+python app.py
+```
+Server will start at:
+```
+http://127.0.0.1:5000
+```
+### 6. Open Frontend
+Visit http://127.0.0.1:5000
+You’ll see the chat popup (💬 button in bottom-right).
+
+### 📥 Re-importing Database Later
+If you reinstall or move the project:
+1. Start MySQL in XAMPP
+2. Open phpMyAdmin → Create start_ai_chatbot DB
+3. Import db/start_ai_chatbot.sql
+
+### 📝 Notes
+
+1. Do not upload venv/ or .db files (already ignored in .gitignore).
+2. Database schema is fully contained in db/start_ai_chatbot.sql.
+3. Update OPENROUTER_API_KEY inside app.py with your valid key.
