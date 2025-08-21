@@ -51,13 +51,13 @@ cd ai_chat_assistant
 ```
 python -m venv venv
 ```
-# Activate virtual environment
+### Activate virtual environment
 ```
 venv\Scripts\activate      # Windows
 source venv/bin/activate   # Mac/Linux
 ```
 
-# Install dependencies
+### Install dependencies
 ```
 pip install -r requirements.txt
 ```
